@@ -1,0 +1,10 @@
+### Create a new post
+POST http://localhost:3000/comments/7
+content-type: application/json
+
+{
+  "content": "test comment content324"
+}
+
+### Find all comments
+GET http://localhost:3000/comments/7

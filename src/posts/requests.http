@@ -1,0 +1,33 @@
+### Create a new post
+POST http://localhost:3000/posts
+content-type: application/json
+
+{
+  "title": "title1",
+  "description": "description1",
+  "article": "article1",
+  "tags": ["tag1", "tag2"]
+}
+
+### Update a user's post
+PATCH  http://localhost:3000/posts/6
+content-type: application/json
+
+{
+  "title": "updated-title1",
+  "description": "updated-description1",
+  "article": "updated-article1",
+  "tags": ["updated-tag1", "updated-tag2"]
+}
+
+### Delete a user's post
+DELETE http://localhost:3000/posts/6
+
+### Find all user's posts
+GET http://localhost:3000/posts
+
+### Find a post
+GET http://localhost:3000/posts/7
+
+### Find all posts
+GET http://localhost:3000/posts/feed
